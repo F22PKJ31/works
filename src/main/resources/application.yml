@@ -14,15 +14,15 @@ spring:
     database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
     show-sql: true
     hibernate:
-      ddl-auto: create
       naming:
         physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+      ddl-auto: update
 server:
   port: 8888
 
-#resources_path: /home/works/file/painting/
+resources_path: /home/works/file/painting/
 
-resources_path: /Users/bo.fan/file/
+#resources_path: /Users/bo.fan/file/
 
 upload:
-  url: http://arop.site:8888/
+  url: http://47.95.14.18:8888/
