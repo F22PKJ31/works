@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.95.14.18:3306/works
+    username: root
+    password: uAiqwVwjJ8-i
+  servlet:
+    multipart:
+      max-file-size: 300MB
+      max-request-size: 300MB
+  resources:
+    static-locations: classpath:/META-INF/resources/,classpath:/resources/,lasspath:/static/,classpath:/public/,file:${resources_path}
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+server:
+  port: 8888
+
+resources_path: /home/works/file/painting/
+
+#resources_path: /Users/bo.fan/file/
+
+upload:
+  url: http://arop.site:8888/
