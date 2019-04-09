@@ -36,7 +36,7 @@ public class PaintingController {
 
     @RequestMapping("list")
     public List<Painting> list(){
-        return repository.findAll(Sort.by("update_time"));
+        return repository.findAll(Sort.by("updateTime"));
     }
 
     @RequestMapping("find")

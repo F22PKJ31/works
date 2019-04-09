@@ -20,9 +20,9 @@ spring:
 server:
   port: 8888
 
-resources_path: /home/works/file/painting/
+#resources_path: /home/works/file/painting/
 
-#resources_path: /Users/bo.fan/file/
+resources_path: /Users/bo.fan/file/
 
 upload:
   url: http://arop.site:8888/
